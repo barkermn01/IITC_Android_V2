@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ingress Intel Maps</string>
+    <string name="title_activity_settings">Map Settings</string>
+</resources>

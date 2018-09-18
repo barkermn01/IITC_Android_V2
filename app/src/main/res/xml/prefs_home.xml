@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="enable_iitc"
+        android:summary="Enable map enchancements IITC this will cause you to use more data when using the Ingress Intel Maps"
+        android:title="Enable IITC" />
+    <PreferenceCategory android:title="IITC Plugins - Portals">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_linked_portals"
+            android:summary="Try to show the linked portals (image, name and link direction) in portal detail view and jump to linked portal on click. Some details may not be available if the linked portal is not in the current view."
+            android:title="Show linked portals" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_reso_energy"
+            android:summary="Show resonator energy percentage on resonator energy bar in portal detail panel."
+            android:title="Resonator energy level" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_portal_distance"
+            android:summary="Allows your current location to be set manually, then shows the distance to the selected portal. Useful when managing portal keys."
+            android:title="Distance to portal" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="IITC Plugins - Info">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_layer_count"
+            android:summary="Allow users to count nested fields"
+            android:title="Layer Count" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_guess_player_level"
+            android:summary="Try to determine player levels from the data available in the current view."
+            android:title="Guess Player Level" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="IITC Plugins - Controls">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_zoom_slider"
+            android:summary="Show a zoom slider on the map instead of the zoom buttons."
+            android:title="Zoom Slider" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="IITC Plugins - Layer">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_portal_level_number"
+            android:summary="Show portal level numbers on map."
+            android:title="Portal Level Numbers" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_draw_tool"
+            android:summary="Allow drawing things onto the current map so you may plan your next move, Only use on devices with a pen device attached"
+            android:title="Draw Tool" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_player_tracker"
+            android:summary="Draw trails for the path a user took onto the map based on status messages in COMMs"
+            android:title="Player Tracker" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_max_links"
+            android:summary="Calculate how to link the portals to create a reasonably tidy set of links/fields. Enable from the layer chooser."
+            android:title="Max Links" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="IITC Plugins - Tweaks">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_show_less_portals"
+            android:summary="Vastly reduce the detail level when zoomed out to level 11 or less (L4+ portals), to significantly reduce data usage when viewing large areas."
+            android:title="Show less portals when zoomed out" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="IITC Plugins - Cache">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="iitc_plugin_cache_viewed_portals"
+            android:summary="Cache the details of recently viewed portals and use this to populate the map when possible"
+            android:title="Cache viewed portal details " />
+    </PreferenceCategory>
+</PreferenceScreen>
